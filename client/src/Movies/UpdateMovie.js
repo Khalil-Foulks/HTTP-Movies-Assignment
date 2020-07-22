@@ -11,7 +11,7 @@ const initialItem = {
     stars:""
 }
 
-const UpdateMovie = () => {
+const UpdateMovie = (props) => {
 
     const location = useLocation();
     const params = useParams()
@@ -49,9 +49,14 @@ const UpdateMovie = () => {
             .put(`http://localhost:5000/api/movies/${item.id}`, item)
             .then(res => {
                 console.log('handlesubmit',res)
+                // const newMovieArr = props.movieList.filter(v => v.id !== item.id)
+                const newMovieArr = props.movieList
+                props.setMovieList(newMovieArr);
+                alert("Movie Updated!")
+                push(`/movies/${item.id}`)
             })
             .catch(err => {
-                
+                console.log(err)
             })
     }
 
