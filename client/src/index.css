@@ -75,3 +75,57 @@ body {
   color: red;
   text-align: center;
 }
+
+button{
+  margin: 10px;
+}
+
+.update {
+	box-shadow:inset 0px 1px 0px 0px #caefab;
+	background:linear-gradient(to bottom, #77d42a 5%, #5cb811 100%);
+	background-color:#77d42a;
+	border-radius:6px;
+	border:1px solid #268a16;
+	display:inline-block;
+	cursor:pointer;
+	color:#306108;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+  text-shadow:0px 1px 0px #aade7c;
+}
+.update :hover {
+	background:linear-gradient(to bottom, #5cb811 5%, #77d42a 100%);
+	background-color:#5cb811;
+}
+.update :active {
+	position:relative;
+	top:1px;
+}
+
+.delete {
+	box-shadow:inset 0px 1px 0px 0px #efb8ab;
+	background:linear-gradient(to bottom, #d4352a 5%, #e74438 100%);
+	background-color:#ce4b0e;
+	border-radius:6px;
+	border:1px solid #8a1616;
+	display:inline-block;
+	cursor:pointer;
+	color:#612908;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e26453;
+}
+.delete :hover {
+	background:linear-gradient(to bottom, #5cb811 5%, #ce4b0e 100%);
+	background-color:#5cb811;
+}
+.delete :active {
+	position:relative;
+	top:1px;
+}
