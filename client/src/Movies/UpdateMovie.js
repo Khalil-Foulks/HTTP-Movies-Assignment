@@ -25,6 +25,7 @@ const UpdateMovie = () => {
             axios.get(`http://localhost:5000/api/movies/${params.id}`)
                 .then(res =>{
                     console.log("updateMovie GET request ",res)
+                    setItem(res.data)
                  })
                 .catch(err => {
                     console.log(err)
