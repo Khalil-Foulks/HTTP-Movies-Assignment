@@ -50,10 +50,10 @@ const UpdateMovie = (props) => {
             .then(res => {
                 console.log('handlesubmit',res)
                 // const newMovieArr = props.movieList.filter(v => v.id !== item.id)
-                const newMovieArr = props.movieList
-                props.setMovieList(newMovieArr);
+                const newMovieArr = props.movieList //not working correctly
+                props.setMovieList(newMovieArr); //not working correctly
                 alert("Movie Updated!")
-                push(`/movies/${item.id}`)
+                push(`/`)
             })
             .catch(err => {
                 console.log(err)
