@@ -50,10 +50,12 @@ const UpdateMovie = (props) => {
             .then(res => {
                 console.log('handlesubmit',res)
                 // const newMovieArr = props.movieList.filter(v => v.id !== item.id)
-                const newMovieArr = props.movieList //not working correctly
-                props.setMovieList(newMovieArr); //not working correctly
+
+                // const newMovieArr = props.movieList //not working correctly
+                // props.setMovieList(newMovieArr); //not working correctly
                 alert("Movie Updated!")
                 push(`/`)
+                props.getMovieList(); //this is rerendering the movieList by doing the same Get request on APP.js
             })
             .catch(err => {
                 console.log(err)
