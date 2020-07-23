@@ -96,36 +96,70 @@ button{
 	text-decoration:none;
   text-shadow:0px 1px 0px #aade7c;
 }
-.update :hover {
+.update:hover {
 	background:linear-gradient(to bottom, #5cb811 5%, #77d42a 100%);
 	background-color:#5cb811;
 }
-.update :active {
+.update:active {
 	position:relative;
 	top:1px;
 }
 
 .delete {
-	box-shadow:inset 0px 1px 0px 0px #efb8ab;
-	background:linear-gradient(to bottom, #d4352a 5%, #e74438 100%);
-	background-color:#ce4b0e;
+	box-shadow:inset 0px 1px 0px 0px #f29c93;
+	background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+	background-color:#fe1a00;
 	border-radius:6px;
-	border:1px solid #8a1616;
+	border:1px solid #d83526;
 	display:inline-block;
 	cursor:pointer;
-	color:#612908;
+	color:#ffffff;
 	font-family:Arial;
 	font-size:15px;
 	font-weight:bold;
 	padding:6px 24px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #e26453;
+	text-shadow:0px 1px 0px #b23e35;
 }
-.delete :hover {
-	background:linear-gradient(to bottom, #5cb811 5%, #ce4b0e 100%);
-	background-color:#5cb811;
+.delete:hover {
+	background:linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
+	background-color:#ce0100;
 }
-.delete :active {
+.delete:active {
 	position:relative;
 	top:1px;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie-card {
+  display: block;
+  top: 0px;
+  position: relative;
+  max-width: 700px;
+  background-color: #f2f8f9;
+  border-radius: 4px;
+  padding: 32px 24px;
+  margin: 12px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+  border: 1px solid #f2f8f9;
+  width: 700px;
+}
+
+.movie-card:hover {
+  transition: all 0.2s ease-out;
+  box-shadow: 0px 4px 8px rgba(45, 89, 129, 0.2);
+  top: -4px;
+  border: 1px solid #cccccc;
+  background-color: white;
+}
+
+.movie-card:before {
+  transform: scale(2.15);
 }
