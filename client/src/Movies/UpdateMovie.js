@@ -67,7 +67,7 @@ const UpdateMovie = (props) => {
     return(
         <div>
             <h2>Update Movie</h2>
-            <form>
+            <form className="updateForm">
                 <input
                     type="text"
                     name="title"
@@ -89,7 +89,7 @@ const UpdateMovie = (props) => {
                     placeholder="metascore"
                     value={item.metascore}
                 />
-                <button onClick={handleSubmit}>Update</button>
+                <button onClick={handleSubmit} className="update">Update</button>
             </form>
         </div>
     )

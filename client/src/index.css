@@ -5,6 +5,7 @@ body {
   background-color: #f2f2f2;
 }
 
+
 .movie-card {
   background-color: #fff;
   border: 0;
@@ -150,6 +151,9 @@ button{
   overflow: hidden;
   border: 1px solid #f2f8f9;
   width: 700px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
 }
 
 .movie-card:hover {
@@ -162,4 +166,26 @@ button{
 
 .movie-card:before {
   transform: scale(2.15);
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+input {
+  flex: 1 1 10ch;
+  margin: .5rem;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+input {
+  flex: 1 1 10ch;
+  margin: .5rem;
 }
